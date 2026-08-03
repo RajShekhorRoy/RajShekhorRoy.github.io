@@ -7,19 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>News &amp; Updates</h1>
-  <p class="role">Raj Shekhor Roy</p>
-</header>
+  <div id="site-nav"></div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="cv.html">CV</a>
-  <a href="news.html" class="active">News</a>
-</nav>
+  <script>
+    fetch('nav.html')
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById('site-nav').innerHTML = html;
+        // highlight the current page
+        const page = location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('#site-nav nav a').forEach(a => {
+          if (a.getAttribute('href') === page) a.classList.add('active');
+        });
+      });
+  </script>
 
+  <main>
+    <!-- page-specific content here -->
+  </main>
+ 
+
+ 
 <main>
   <section>
     <h2>Latest</h2>
