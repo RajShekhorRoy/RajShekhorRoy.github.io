@@ -5,4 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications — Raj Shekhor Roy</title>
   <link rel="stylesheet" href="style.css">
-</
+</head>
+
+<body>
+<div id="site-nav"></div>
+
+<script>
+  fetch('nav.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('site-nav').innerHTML = html;
+      // highlight the current page
+      const page = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('#site-nav nav a').forEach(a => {
+        if (a.getAttribute('href') === page) a.classList.add('active');
+      });
+    });
+</script>
+</body>
