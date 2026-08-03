@@ -11,13 +11,21 @@
   <h1>Research &amp; Projects</h1>
   <p class="role">Raj Shekhor Roy</p>
 </header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html" class="active">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="cv.html">CV</a>
-  <a href="news.html">News</a>
-</nav>
+ 
+<div id="site-nav"></div>
+
+<script>
+  fetch('nav.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('site-nav').innerHTML = html;
+      // highlight the current page
+      const page = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('#site-nav nav a').forEach(a => {
+        if (a.getAttribute('href') === page) a.classList.add('active');
+      });
+    });
+</script>
 <main>
   <section>
     <h2>Antigen Discovery Pipeline (Texas A&amp;M, SPHERICAL)</h2>
