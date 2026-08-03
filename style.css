@@ -1,0 +1,27 @@
+:root { --accent:#2c5f8a; --dark:#1a3a52; --bg:#fff; --text:#222; --muted:#666; --card:#f5f7fa; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',system-ui,sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+header { background:linear-gradient(135deg,var(--accent),var(--dark)); color:#fff; padding:2.5rem 1.5rem 1.5rem; text-align:center; }
+header h1 { font-size:2.2rem; margin-bottom:.3rem; }
+header p.role { font-size:1rem; opacity:.9; }
+header .contact { margin-top:.8rem; font-size:.85rem; }
+header .contact a { color:#cfe3f5; text-decoration:none; margin:0 .4rem; }
+nav { position:sticky; top:0; background:var(--dark); display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; padding:.8rem; z-index:100; }
+nav a { color:#fff; text-decoration:none; font-size:.9rem; padding:.2rem .4rem; }
+nav a:hover, nav a.active { color:#9ec4e0; border-bottom:2px solid #9ec4e0; }
+main { max-width:900px; margin:0 auto; padding:2rem 1.5rem; }
+section { margin-bottom:2.5rem; }
+h2 { color:var(--accent); border-bottom:2px solid var(--accent); padding-bottom:.3rem; margin-bottom:1rem; font-size:1.4rem; }
+.item { margin-bottom:1.2rem; }
+.item h3 { font-size:1.05rem; }
+.item .meta { color:var(--muted); font-size:.88rem; margin-bottom:.3rem; }
+ul { margin-left:1.2rem; }
+.card { background:var(--card); border-radius:8px; padding:1rem 1.2rem; margin-bottom:1rem; }
+.tags { display:flex; flex-wrap:wrap; gap:.5rem; }
+.tag { background:var(--accent); color:#fff; padding:.3rem .7rem; border-radius:20px; font-size:.8rem; }
+.news-entry { border-left:3px solid var(--accent); padding:.3rem 0 .3rem 1rem; margin-bottom:1.2rem; }
+.news-entry .date { color:var(--muted); font-size:.82rem; font-weight:bold; }
+a.link { color:var(--accent); text-decoration:none; }
+a.link:hover { text-decoration:underline; }
+footer { text-align:center; padding:1.5rem; background:var(--dark); color:#cfe3f5; font-size:.85rem; }
+.btn { display:inline-block; background:var(--accent); color:#fff; padding:.5rem 1rem; border-radius:6px; text-decoration:none; font-size:.9rem; margin-top:.5rem; }
