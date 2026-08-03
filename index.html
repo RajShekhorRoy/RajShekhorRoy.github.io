@@ -4,79 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raj Shekhor Roy</title>
-  <style>
-    :root {
-      --accent: #2c5f8a;
-      --bg: #ffffff;
-      --text: #222;
-      --muted: #666;
-      --card: #f5f7fa;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #2c5f8a, #1a3a52);
-      color: #fff;
-      padding: 3rem 1.5rem 2rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.4rem; margin-bottom: .4rem; }
-    header p.role { font-size: 1.1rem; opacity: .9; }
-    header .contact { margin-top: 1rem; font-size: .95rem; }
-    header .contact a { color: #cfe3f5; text-decoration: none; margin: 0 .5rem; }
-    nav {
-      position: sticky; top: 0;
-      background: #1a3a52;
-      display: flex; justify-content: center; flex-wrap: wrap;
-      gap: 1rem; padding: .8rem;
-      z-index: 100;
-    }
-    nav a { color: #fff; text-decoration: none; font-size: .9rem; }
-    nav a:hover { color: #9ec4e0; }
-    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-    section { margin-bottom: 2.5rem; }
-    h2 {
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: .3rem; margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-    .item { margin-bottom: 1.2rem; }
-    .item h3 { font-size: 1.1rem; }
-    .item .meta { color: var(--muted); font-size: .9rem; margin-bottom: .3rem; }
-    ul { margin-left: 1.2rem; }
-    .card {
-      background: var(--card);
-      border-radius: 8px; padding: 1rem 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .tags { display: flex; flex-wrap: wrap; gap: .5rem; }
-    .tag {
-      background: var(--accent); color: #fff;
-      padding: .3rem .7rem; border-radius: 20px; font-size: .8rem;
-    }
-    footer {
-      text-align: center; padding: 1.5rem;
-      background: #1a3a52; color: #cfe3f5; font-size: .85rem;
-    }
-    a.pub-link { color: var(--accent); text-decoration: none; }
-    a.pub-link:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
   <h1>Raj Shekhor Roy</h1>
   <p class="role">Postdoctoral Researcher, Texas A&amp;M University</p>
   <p class="role">Protein Structure &amp; Interaction Prediction · Antigen Design · Cryo-EM</p>
   <div class="contact">
-    <a href="mailto:rajroy@tamu.edu">rajroy@tamu.edu</a> ·
-    <a href="https://scholar.google.com/citations?user=bvWKL3UAAAAJ&hl=en">Google Scholar</a> ·
+    <a href="mailto:rajroy@tamu.edu">Email</a> ·
+    <a href="https://scholar.google.com/citations?user=bvWKL3UAAAAJ&hl=en">Scholar</a> ·
     <a href="https://www.linkedin.com/in/rajshekhorroy/">LinkedIn</a> ·
     <a href="https://github.com/RajShekhorRoy">GitHub</a> ·
     <a href="https://www.researchgate.net/profile/Raj-Roy-5">ResearchGate</a>
@@ -84,133 +21,53 @@
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#publications">Publications</a>
-  <a href="#honors">Honors</a>
-  <a href="#service">Service</a>
+  <a href="index.html" class="active">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="cv.html">CV</a>
+  <a href="news.html">News</a>
 </nav>
 
 <main>
-
-  <section id="about">
+  <section>
     <h2>About</h2>
-    <p>I am a computational researcher focused on protein structure, interaction and quality
-    prediction, novel protein discovery, protein and antigen design, and cryo-EM. I completed my
-    Ph.D. in Computer Science at the University of Missouri-Columbia and currently work as a
-    Postdoctoral Researcher at Texas A&amp;M University, building deep learning and bioinformatics
-    pipelines for antigen discovery and biosynthetic gene cluster analysis.</p>
+    <p>I am a Postdoctoral Researcher at Texas A&amp;M University working on protein structure,
+    interaction and quality prediction, novel protein discovery, protein and antigen design,
+    and cryo-EM [1]. I currently develop computational pipelines for antigen discovery and
+    agentic biosynthetic gene cluster (BGC) pathway analysis, combining bioinformatics and
+    deep learning [1].</p>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="item">
-      <h3>Ph.D. in Computer Science — University of Missouri-Columbia</h3>
-      <div class="meta">2019 – 2024 · Missouri, USA</div>
-      <p>Thesis: <em>Machine learning prediction of interchain contacts and structural model
-      quality for protein complexes.</em></p>
-    </div>
-    <div class="item">
-      <h3>M.S. in Computer Science (awarded en route to Ph.D.) — University of Missouri-Columbia</h3>
-      <div class="meta">2019 – 2023 · Missouri, USA</div>
-    </div>
-    <div class="item">
-      <h3>B.Sc. in Computer Science and Engineering — BRAC University</h3>
-      <div class="meta">2013 – 2017 · Dhaka, Bangladesh</div>
-      <p>Thesis: <em>Human fall control system for disabled people using double inverted pendulum.</em></p>
+  <section>
+    <h2>Currently</h2>
+    <div class="card">
+      <ul>
+        <li>Leading development of a computational pipeline for antigen identification and
+        characterization; the prototype detected SARS-CoV-2 conserved epitopes (publication in progress) [1].</li>
+        <li>Building an agentic BGC pathway analysis pipeline connecting gene clusters to
+        predicted metabolic pathways and secondary metabolites [1].</li>
+        <li>Mentoring PhD and undergraduate students at Texas A&amp;M University and the
+        University of Missouri [1].</li>
+      </ul>
+      <a class="btn" href="research.html">See research details →</a>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
-
+  <section>
+    <h2>Highlights</h2>
     <div class="card">
-      <h3>Postdoctoral Researcher — SPHERICAL, Texas A&amp;M University</h3>
-      <div class="meta">January 2025 – Present</div>
       <ul>
-        <li>Led development of a computational pipeline for antigen identification using
-        bioinformatics and deep learning; prototype detected SARS-CoV-2 conserved epitopes.</li>
-        <li>Integrated structural, sequence, and machine learning techniques for antigen prediction.</li>
-        <li>Performed genome-based BGC annotation and built a pathway inference pipeline linking
-        clusters to predicted metabolic pathways and secondary metabolites.</li>
-        <li>Managed task allocation and mentored graduate students.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Senior Graduate Research Assistant — City Sim AI Lab, University of Missouri</h3>
-      <div class="meta">July 2024 – December 2024</div>
-      <ul>
-        <li>Led development of deep learning tools including data collection, preprocessing, and augmentation.</li>
-        <li>Built an object detection and segmentation pipeline for urban images.</li>
-        <li>Trained and optimized models via hyperparameter tuning and architectural adjustments.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Graduate Research Assistant — Bioinformatics &amp; Machine Learning Lab, University of Missouri</h3>
-      <div class="meta">August 2019 – July 2024</div>
-      <ul>
-        <li>Developed <strong>DRCon</strong>, a dilated ResNet model using distributed deep learning
-        for interchain contact prediction of homodimers, surpassing state-of-the-art at release.</li>
-        <li>Developed <strong>ConComplex</strong> (simulated annealing) and co-developed
-        <strong>DeepComplex</strong> (web server) and <strong>DRLcomplex</strong> (reinforcement learning).</li>
-        <li>Contributed to <strong>GDFold</strong>, a gradient-descent structure reconstruction method.</li>
-        <li>Developed <strong>MULTICOM_qa</strong> — ranked #1 in estimating global fold accuracy of
-        protein assemblies in CASP15 (5.3% higher top-1 TM-score than standard AlphaFold-Multimer).</li>
-        <li>Cryo-EM: proficient with CryoSPARC and EMAN2 for density map reconstruction and refinement.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Programmer — Synesis It</h3>
-      <div class="meta">February 2018 – June 2019 · Dhaka, Bangladesh</div>
-      <ul>
-        <li><strong>Ekpay</strong> (ICT Division of Bangladesh utility/government payments): developed
-        and maintained APIs, designed scalable databases, implemented automated backups.</li>
-        <li><strong>G-ERP</strong> (Government ERP): built integration APIs, led responsive frontend
-        development, and automated report generation.</li>
+        <li>Led the team ranked <strong>#1</strong> in estimating global fold accuracy of protein
+        quaternary structures in CASP15 (EMA), 2022 [1].</li>
+        <li>Outstanding PhD Student Award — EECS Department and College of Engineering,
+        University of Missouri-Columbia, 2024 [1].</li>
+        <li>Patent filed: <em>Deep Learning Systems and Methods for Predicting Structural Aspects
+        of Protein-Related Complexes</em>, 2022 [1].</li>
       </ul>
     </div>
   </section>
+</main>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="tags">
-      <span class="tag">PyTorch</span>
-      <span class="tag">TensorFlow</span>
-      <span class="tag">Deep Learning</span>
-      <span class="tag">Structural Bioinformatics</span>
-      <span class="tag">Protein Prediction</span>
-      <span class="tag">Cryo-EM</span>
-      <span class="tag">Antigen Pipelines</span>
-      <span class="tag">BGC Annotation</span>
-      <span class="tag">Python</span>
-      <span class="tag">Java</span>
-      <span class="tag">Django</span>
-      <span class="tag">PostgreSQL</span>
-      <span class="tag">Docker</span>
-      <span class="tag">Slurm / HPC</span>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <div class="item">
-      <p>Roy, R. S., Oh, J., Abeer, A.N.M.N., et al. (2026). An integrated computational antigen
-      discovery pipeline with hierarchical filtering for emerging viral variants.
-      <em>NAR Molecular Medicine</em>.
-      <a class="pub-link" href="https://doi.org/10.1093/narmme/ugag024">DOI</a></p>
-    </div>
-    <div class="item">
-      <p>Roy, R. S., Liu, J., Giri, N., Guo, Z., &amp; Cheng, J. (2023). Combining pairwise structural
-      similarity and deep learning interface contact prediction to estimate protein complex model
-      accuracy in CASP15. <em>Proteins</em>, 91(12).
-      <a class="pub-link" href="https://doi.org/10.1002/prot.26542">DOI</a></p>
-    </div>
-    <div class="item">
-      <p>Liu, J., Guo, Z., Wu, T., Roy, R. S., et al. (2023). Enhancing AlphaFold-Multimer-based
-      protein complex structure prediction with MULTICOM in CASP15. <em>Communications Biology</em>, 6.
-      <a class="pub-link" href="https://doi.org/10.1038/s42003-023-05525-3">DOI</a></p>
+<footer>© 2026 Raj Shekhor Roy · College Station, Texas · rajroy@tamu.edu</footer>
+</body>
+</html>
